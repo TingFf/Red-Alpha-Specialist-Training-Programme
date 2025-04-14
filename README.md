@@ -28,17 +28,18 @@ NAME = 0
 FRIENDS_LIST = 1
 AGE = 2
 
-...
-def show_looney_friends(looney_tune):
-    """this function shows the friends of a given looney tune"""
-    if len(looney_tune[FRIENDS_LIST]) == 0:  # This line will give error if the below condition is not implement and just return ["Bugs_Bunny", None, 0]
-        print("%s has no friends :(" % (looney_tune[NAME],))
-...
-def create_looney_tune(name="cool guy!", friends_list=None, age=0): # Change to None.  
-""" To prevent using the same object list, set the friends_list = None but none type cant be process later on so have to use this condition to change back and this ensure not the same object """
-if friends_list is None:
-    friends_list = []
-return [name, friends_list, age]
-...
+...  
+def show_looney_friends(looney_tune):  
+    """this function shows the friends of a given looney tune"""  
+    if len(looney_tune[FRIENDS_LIST]) == 0:  # This line will give error if the below condition is not implement and just return ["Bugs_Bunny", None, 0]  
+        print("%s has no friends :(" % (looney_tune[NAME],))  
+...  
+def create_looney_tune(name="cool guy!", friends_list=None, age=0): # Change to None.   
+""" To prevent using the same object list, set the friends_list = None but none type cant be process later on so have to use this condition to change back and this ensure 
+ not the same object """  
+if friends_list is None:  
+    friends_list = []  
+return [name, friends_list, age]  
+...  
 
 
