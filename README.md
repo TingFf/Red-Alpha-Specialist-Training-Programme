@@ -4,7 +4,7 @@ This marks the beginning of my journey as a Cyber Security Specialist. I chose t
 
 This repository serves as a place to document the work I’ve completed and the knowledge I’ve gained throughout this journey. I also plan to share some of my personal experiences and insights here as I continue to grow in the field.
 
-Python Notes:
-Everything is python is a object.
-== checks equality
-is checks identity. Check whethers is it pointing the same object.
+Python Notes:  
+Everything is python is a object.  
+== checks equality.    
+is checks identity. Check whethers is it pointing the same object.  
