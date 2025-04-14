@@ -16,7 +16,7 @@ def create_looney_tune(name="cool guy!", friends_list=None, age=0): # Default mu
 bugs = create_looney_tune("Bugs Bunny", age=2)  # Both bugs and daffy use the same default list.  
 daffy = create_looney_tune("Daffy Duck")
 
-add_new_friend(daffy, bugs)    # Adding daffy friend list will modify bugs friend list as well
+add_new_friend(daffy, bugs)    # Adding daffy friend list will modify bugs friend list as well  
 add_new_friend(yosemite, daffy)
 
 
