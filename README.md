@@ -7,11 +7,11 @@ This repository serves as a place to document the work I’ve completed and the 
 Python Notes:  
 Everything is python is a object.  
 Objects topic:  
-1.
+1.  
 == checks equality.    
 is checks identity. Check whethers is it pointing the same object.  
   
-2.
+2.  
 def create_looney_tune(name="cool guy!", friends_list=None, age=0): # Default mutable list.
 
 bugs = create_looney_tune("Bugs Bunny", age=2)  # Both bugs and daffy use the same default list.
