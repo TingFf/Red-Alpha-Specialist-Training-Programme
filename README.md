@@ -9,7 +9,7 @@ Everything is python is a object.
 ## Topics
 **Objects**  
 `==` checks equality.    
-`is` checks identity. Check whethers is it pointing the same object.
+`is` checks identity. (Is it pointing to the same object in memory)
 ```
 def create_looney_tune(name="cool guy!", friends_list=[], age=0): # Default mutable list.  
 
