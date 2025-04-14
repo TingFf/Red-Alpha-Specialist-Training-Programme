@@ -11,9 +11,9 @@ Objects topic:
 == checks equality.    
 is checks identity. Check whethers is it pointing the same object.  
 2.  
-def create_looney_tune(name="cool guy!", friends_list=None, age=0): # Default mutable list.
+def create_looney_tune(name="cool guy!", friends_list=None, age=0): # Default mutable list.  
 
-bugs = create_looney_tune("Bugs Bunny", age=2)  # Both bugs and daffy use the same default list.
+bugs = create_looney_tune("Bugs Bunny", age=2)  # Both bugs and daffy use the same default list.  
 daffy = create_looney_tune("Daffy Duck")
 
 add_new_friend(daffy, bugs)    # Adding daffy friend list will modify bugs friend list as well
