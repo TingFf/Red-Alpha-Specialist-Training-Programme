@@ -119,6 +119,6 @@ if __name__ == "__main__":
 ```
 **Regular expression**
 
-RE works on string.  
-More efficient way of string searching without much manipution on the string.  
-character class`(/d, /w)` only works on single char unless uses quatifier.`(+, *)`
+1. RE works on string.  
+2. More efficient way of string searching without much manipution on the string.  
+3. character class`(/d, /w)` only works on single char unless uses quatifier.`(+, *)`
