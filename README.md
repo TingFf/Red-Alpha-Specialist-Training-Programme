@@ -73,6 +73,11 @@ def get_arguments():
     parser.add_argument("first_number", type=float, help="first operand")  # (Second argument since initialize second)
     parser.add_argument("second_number", type=float, help="second operand")    # (Third argument since initialize third)
 
+    group = parser.add_mutually_exclusive_group()           # Those within the group cant exist together.
+    group.addargument("-v", "--verbose", help="description")       
+    ...
+    
+
     if len(sys.argv) == 1:              # File path/name == sys.argv[0]
         parser.error("too few arguments")
     args = parser.parse_args()
