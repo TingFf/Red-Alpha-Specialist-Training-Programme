@@ -122,3 +122,45 @@ if __name__ == "__main__":
 1. RE works on string.  
 2. More efficient way of string searching without much manipution on the string.  
 3. character class`(/d, /w)` only works on single char unless uses quatifier.`(+, *)`
+```
+import re
+
+re.search("...", s) -> return None if no search result
+```
+
+```
+return re.sub("road", "Rd.", s, flags=re.IGNORECASE) -> case-insensitive
+```
+4. Remove leading zeros of an ip address
+```
+def re19(s):
+    return re.sub(r'\b0+(\d)', r'\1', s)
+
+1st Argument:
+\b — word boundary (ensures we’re at the start of a number segment)
+0+ — one or more leading zeros
+(\d) — captures the first digit after the zeros
+
+2nd Argument:
+\1 - Replace with capture digit
+```
+5. Only `re.match()`, `re.search()`, `re.fullmatch`, `re.finditer()` returns a match object.
+
+**List Comprehension**
+1. When need return a list.
+2. Typical structure. 
+```
+list = []
+for words in list_of_strings:
+    if re.search(words, s):
+         list.append(words)
+    return list
+...
+
+equivalent
+
+return [words for words in list_of_strings if re.search(words, s)]
+
+
+
+```
