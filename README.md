@@ -180,7 +180,4 @@ for words in list_of_strings:
 equivalent
 
 return [words for words in list_of_strings if re.search(words, s)]
-
-
-
 ```
