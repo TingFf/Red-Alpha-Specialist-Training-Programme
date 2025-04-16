@@ -226,3 +226,11 @@ assert non_negative(-1) == 0
 
 ...
 ```
+2. Map
+```
+world_map = lambda x: x.casefold().capitalize()
+
+def main():
+    countries = ['ISRAEL', 'france', 'engLand', 'sinGAPore']
+    assert list(map(world_map,countries)) == ['Israel', 'France', 'England', 'Singapore']
+```
