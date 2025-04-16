@@ -145,6 +145,26 @@ def re19(s):
 \1 - Replace with capture digit
 ```
 5. Only `re.match()`, `re.search()`, `re.fullmatch`, `re.finditer()` returns a match object.
+6. Negative lookbehind match any thing not at the beginning of the string.
+```
+import re
+
+s = "JSONData"
+snake = re.sub(r'(?<!^)([A-Z])', r'_\1', s).lower()
+print(snake)
+
+
+Position | Char | (?<!^) Passes? | Capital? | Match?
+    0    |  J   |     ❌         |   ✅    | ❌
+    1    |  S   |     ✅         |   ✅    | ✅
+    2    |  O   |     ✅         |   ✅    | ✅
+    3    |  N   |     ✅         |   ✅    | ✅
+    4    |  D   |     ✅         |   ✅    | ✅
+    5    |  a   |     ✅         |   ❌    | ❌
+    6    |  t   |     ✅         |   ❌    | ❌
+    7    |  a   |     ✅         |   ❌    | ❌
+
+```
 
 **List Comprehension**
 1. When need return a list.
