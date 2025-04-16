@@ -165,7 +165,10 @@ Position | Char | (?<!^) Passes? | Capital? | Match?
     7    |  a   |     ✅         |   ❌    | ❌
 
 ```
-
+7. 
+```
+return " ".join(re.findall(fr"[\S]{{{limit+1},}}", s))
+```
 **List Comprehension**
 1. When need return a list.
 2. Typical structure. 
@@ -180,4 +183,46 @@ for words in list_of_strings:
 equivalent
 
 return [words for words in list_of_strings if re.search(words, s)]
+```
+3. Hex encoder and decoder.
+```
+def hex_decode(string):
+    "This function decodes each char to hex bytes"
+    return bytes.fromhex(string).decode('utf-8')
+
+def hex_encode(string):
+    "This function encodes each char to hex bytes"
+    return string.encode('utf-8').hex()
+
+```
+
+4. Nested list comprehension.
+```
+[[y*x for y in range(5)] for x in range(5)]
+```
+5. Ascii encoder and decoder.
+```
+def ascii_codes(string):
+    "This function encodes each char to its ascii value"
+    return [i for i in string.encode("ascii")] --> This will convert the encoded bytes in decimal
+
+or
+
+
+def ascii_codes(string):
+    "This function encodes each char to its ascii value"
+    return [ord(i) for i in string]
+```
+
+**Magic Function**
+1. Lambda
+```
+div_and_mod = lambda x, y: (x / y, x % y) 
+non_negative = lambda x: x if x > 0 else 0
+
+assert div_and_mod(4, 2) == (2.0, 0)
+assert non_negative(1) == 1
+assert non_negative(-1) == 0
+
+...
 ```
